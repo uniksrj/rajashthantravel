@@ -40,49 +40,58 @@
 </div>
 <div class="test_container">
 	<div class="head_test">
-	  <h3>Our Amenities</h3>
-	  <p>Have a look at our popular reasons why you should choose our bus service. Just choose a bus and get a ticket for your great journey!</p>
+		<h3>Our Amenities</h3>
+		<p>
+			Have a look at our popular reasons why you should choose our bus service.
+			Just choose a bus and get a ticket for your great journey!
+		</p>
 	</div>
-	<ngx-slick-carousel class="slick-carousel" #slickModal="slick-carousel" [config]="slideConfig">
-	  <div ngxSlickItem *ngFor="let slide of slides" class="block_amenties">
-		<i [class]="slide.icon"></i>
-		<hr>
-		<p>{{ slide.text }}</p>
-	  </div>
-	</ngx-slick-carousel>
-  </div>
-
-  <div class="about-us-container">
-  <section class="about-section">
-	<div class="container">
-		<div class="row clearfix">
-			<div class="content-column col-md-6 col-sm-12 col-xs-12">
-				<div class="inner-column">
-					<div class="sec-title">
-						<div class="title">About Us</div>
-						<h2>We build Trust <br> And Safty</h2>
-					</div>
-					<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
-					<div class="email">Request Quote: <span class="theme_color">freequotegmail.com</span></div>
-					<a routerLink="/aboutus" class="theme-btn btn-style-three">Read More</a>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" *ngFor="let slide of slides">
+				<div class="block_amenties">
+					<i [class]="slide.icon"></i>
+					<hr />
+					<p [title]="slide.text">{{ slide.text }}</p>
 				</div>
 			</div>
-			
-			<!--Image Column-->
-			<div class="image-column col-md-6 col-sm-12 col-xs-12">
-				<div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-					<div class="image">
-						<img [src]="back_bus" alt="">
-						<div class="overlay-box">
-							<div class="year-box"><span class="number">2</span>Years <br> Visitors <br> Trust</div>
-						</div>  
-					</div>
-				</div>
-			</div>
-			
 		</div>
+		<!-- <div class="swiper-pagination"></div> -->
 	</div>
-</section>
 </div>
-  
-  
+
+<div class="about-us-container">
+	<section class="about-section">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="content-column col-md-6 col-sm-12 col-xs-12">
+					<div class="inner-column">
+						<div class="sec-title">
+							<div class="title">About Us</div>
+							<h2>We build Trust <br> And Safty</h2>
+						</div>
+						<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+							unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+							survived not only five centuries</div>
+						<div class="email">Request Quote: <span class="theme_color">freequotegmail.com</span></div>
+						<a routerLink="/aboutus" class="theme-btn btn-style-three">Read More</a>
+					</div>
+				</div>
+
+				<!--Image Column-->
+				<div class="image-column col-md-6 col-sm-12 col-xs-12">
+					<div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img [src]="back_bus" alt="">
+							<div class="overlay-box">
+								<div class="year-box"><span class="number">2</span>Years <br> Visitors <br> Trust</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</div>
