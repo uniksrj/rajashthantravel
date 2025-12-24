@@ -1,9 +1,10 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'app-loader-page',
-  templateUrl: './loader-page.component.html',
-  styleUrl: './loader-page.component.css'
+    selector: 'app-loader-page',
+    templateUrl: './loader-page.component.html',
+    styleUrl: './loader-page.component.css',
+    standalone: false
 })
 export class LoaderPageComponent implements OnInit, OnChanges{
 

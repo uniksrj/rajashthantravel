@@ -2,9 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-seatdeker',
-  templateUrl: './seatdeker.component.html',
-  styleUrl: './seatdeker.component.css'
+    selector: 'app-seatdeker',
+    templateUrl: './seatdeker.component.html',
+    styleUrl: './seatdeker.component.css',
+    standalone: false
 })
 export class SeatdekerComponent implements OnInit{
 

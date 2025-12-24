@@ -5,10 +5,11 @@ import { MatDatepicker } from '@angular/material/datepicker';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-bus-search',
-  templateUrl: './bus-search.component.html',
-  styleUrl: './bus-search.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-bus-search',
+    templateUrl: './bus-search.component.html',
+    styleUrl: './bus-search.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class BusSearchComponent implements OnInit{
 

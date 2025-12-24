@@ -5,10 +5,11 @@ import { Autoplay, Pagination, Navigation  } from 'swiper/modules';
 // import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 Swiper.use([Autoplay, Pagination, Navigation ]);
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class HomeComponent {
   heading_txt: string = "We Give Trust"

@@ -2,9 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-bookings',
-  templateUrl: './bookings.component.html',
-  styleUrl: './bookings.component.css'
+    selector: 'app-bookings',
+    templateUrl: './bookings.component.html',
+    styleUrl: './bookings.component.css',
+    standalone: false
 })
 export class BookingsComponent implements OnInit{
 
